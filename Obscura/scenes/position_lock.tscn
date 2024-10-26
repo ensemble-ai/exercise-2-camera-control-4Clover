@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://xw1bqy431hub"]
+
+[ext_resource type="Script" path="res://scripts/camera_controllers/camera_controller_position_lock.gd" id="1_svvbq"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_edgni"]
+
+[node name="PositionLock" type="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+visible = false
+script = ExtResource("1_svvbq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0633883, 0.0592626, 2.59045e-09)
+texture = SubResource("CanvasTexture_edgni")
+region_enabled = true
+region_rect = Rect2(5, 5, 5, 5)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0777473, 0.330187, 0.0880213)
+disabled = true
+polygon = PackedVector2Array(5, 5, 0, 5, 5, 0, 0, 0)
