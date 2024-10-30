@@ -37,6 +37,7 @@ func _physics_process(_delta):
 	var direction = (Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	#var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	
+	
 	if direction:
 		velocity.x = direction.x * speed
 		velocity.z = direction.z * speed
@@ -49,3 +50,4 @@ func _physics_process(_delta):
 func _play(player:AudioStreamPlayer2D) -> void:
 	if !player.playing:
 		player.play()
+		

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://xw1bqy431hub"]
 
-[ext_resource type="Script" path="res://scripts/camera_controllers/camera_controller_position_lock.gd" id="1_svvbq"]
+[ext_resource type="Script" path="res://scripts/camera_controllers/camera_controller_auto_scroller.gd" id="1_svvbq"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_edgni"]
 
