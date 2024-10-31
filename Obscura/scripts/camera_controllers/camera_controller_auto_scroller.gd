@@ -1,15 +1,16 @@
 class_name CameraControllerAutoScroller
 extends CameraControllerBase
 
-@export var top_left := Vector2(-50 , 50)
-@export var bottom_right := Vector2(50, -50)
+@export var top_left := Vector2(-40 , 40)
+@export var bottom_right := Vector2(40, -40)
 @export var autoscroll_speed := Vector3(18, 0, 0)
 
 # Create camera box, move camera box at scroll speed, if target is against left edge, add velocity to target
 
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ADD AUTO SCALING BOX TO ZOOM LEVEL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	super()
 	global_position = target.position
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -20,10 +21,6 @@ func _process(delta: float) -> void:
 	if draw_camera_logic:
 		draw_logic()
 	
-	super(delta)
-	
-func draw_logic() -> void:
-	var delta : float = get_process_delta_time()
 	global_position += autoscroll_speed * delta
 	
 	var tpos : Vector3 = target.global_position
@@ -32,7 +29,6 @@ func draw_logic() -> void:
 	var right : float = bottom_right.x
 	var top : float = bottom_right.y
 	var bottom : float =  top_left.y
-	
 	
 	#Left edge - PUSH
 	var diff_bwtn_left_edge: float = (tpos.x - target.WIDTH / 2.0) - (cpos.x + left)
@@ -47,14 +43,20 @@ func draw_logic() -> void:
 	#Top edge - STOP
 	var diff_bwtn_top_edge: float = (tpos.z - target.HEIGHT / 2.0) - (cpos.z + top)
 	if diff_bwtn_top_edge < 0:
-		target.global_position.z = cpos.z - top + target.HEIGHT / 2.0
+		target.global_position.z = cpos.z + top + target.HEIGHT / 2.0
 		#
 	#Bottom edge - STOP
 	var diff_bwtn_bottom_edge: float = (tpos.z + target.HEIGHT / 2.0) - (cpos.z + bottom)
 	if diff_bwtn_bottom_edge > 0:
 		target.global_position.z = cpos.z + bottom - target.HEIGHT / 2.0
-		
 	
+	super(delta)
+	
+func draw_logic() -> void:
+	var left : float = top_left.x
+	var right : float = bottom_right.x
+	var top : float = bottom_right.y
+	var bottom : float =  top_left.y
 	
 	#Box drawing
 	var mesh_instance := MeshInstance3D.new()

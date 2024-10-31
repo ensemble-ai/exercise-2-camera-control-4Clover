@@ -9,7 +9,7 @@ func _ready():
 
 func _draw():
 	var center: Vector2     = custom_minimum_size / 2
-	var crosshair_size: int = 50  # Size of crosshair arms in PIXELS
+	var crosshair_size: int = 20  # Size of crosshair arms in PIXELS
 
 	# Vertical line
 	draw_line(center - Vector2(0, crosshair_size), center + Vector2(0, crosshair_size), Color.WHITE, 2)

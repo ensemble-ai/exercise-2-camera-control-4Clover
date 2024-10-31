@@ -15,7 +15,7 @@ extends Camera3D
 
 func _ready() -> void:
 	current = false
-	position += Vector3(0.0, dist_above_target, 0.0) 
+	position += Vector3(0.0, dist_above_target, 0.0)
 
 
 func _process(delta: float) -> void:
@@ -25,6 +25,13 @@ func _process(delta: float) -> void:
 		dist_above_target = clampf(dist_above_target - zoom_speed * delta, min_zoom, max_zoom)
 	if Input.is_action_pressed("zoom_out"):
 		dist_above_target = clampf(dist_above_target + zoom_speed * delta, min_zoom, max_zoom)
+	if Input.is_action_just_pressed("zoom_in"):
+		dist_above_target = clampf(dist_above_target - zoom_speed * delta * 5, min_zoom, max_zoom)
+	if Input.is_action_just_pressed("zoom_out"):
+		dist_above_target = clampf(dist_above_target + zoom_speed * delta * 5, min_zoom, max_zoom)
+	if Input.is_action_just_pressed("back_to_home"): # Press H to teleport to game start
+		global_position = Vector3(0.0, dist_above_target, 0.0)
+		target.global_position = Vector3(0, 20, 0)
 	
 	#camera tilt code for the brave
 	#if Input.is_action_pressed("camera_tilt_left"):

@@ -18,4 +18,10 @@ func _process(_delta):
 		Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left"),
 		Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 		).limit_length(1.0))
+	text += "\n"
+	text += str(get_parent().dist_above_target)
+	text += "\n"
+	var parent = get_parent()
+	#var distance_to_target: float = parent.global_position.distance_to(%Vessel)
+	text += str(parent)
 	
