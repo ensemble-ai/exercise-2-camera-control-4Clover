@@ -17,6 +17,8 @@ Stage 1 is worth 10 points. Stages 2, 3, 4, and 5 are worth 15 points each. The 
 
 The due date for this exercise is listed in Canvas. The master branch, as found on your individual exercise repository, will be evaluated.
 
+DUE NOV 1 @ 8:00 AM PST
+
 ## Exercise Stages 
 
 The following are the basic criteria for each stage:
