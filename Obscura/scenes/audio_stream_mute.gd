@@ -6,5 +6,5 @@ func _ready() -> void:
 	AudioServer.set_bus_mute(bus_idx, true)
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass

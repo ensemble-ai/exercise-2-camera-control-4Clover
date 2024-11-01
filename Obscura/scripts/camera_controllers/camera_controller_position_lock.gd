@@ -1,13 +1,6 @@
 class_name CameraControllerPositionLock
 extends CameraControllerBase
 
-#Base exports
-#@export var target:Vessel
-#@export var dist_above_target:float = 10.0
-#@export var zoom_speed:float = 10.0
-#@export var min_zoom:float = 5.0
-#@export var max_zoom:float = 100.0
-#@export var draw_camera_logic:bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -30,18 +23,18 @@ func draw_logic() -> void:
 	var crosshair_instance := MeshInstance3D.new()
 	var crosshair_mesh := ImmediateMesh.new()
 	var crosshair_material := ORMMaterial3D.new()
-	var crosshair_size: float = 5  # Adjust size as needed
+	var crosshair_size: float = 5 # Length of each axis 
 	
 	crosshair_instance.mesh = crosshair_mesh
 	crosshair_instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	
 	# Draw crosshair lines
 	crosshair_mesh.surface_begin(Mesh.PRIMITIVE_LINES, crosshair_material)
-	crosshair_mesh.surface_add_vertex(Vector3(-crosshair_size, 0, 0))
-	crosshair_mesh.surface_add_vertex(Vector3(crosshair_size, 0, 0))
+	crosshair_mesh.surface_add_vertex(Vector3(-crosshair_size/2, 0, 0))
+	crosshair_mesh.surface_add_vertex(Vector3(crosshair_size/2, 0, 0))
 
-	crosshair_mesh.surface_add_vertex(Vector3(0, 0, -crosshair_size))
-	crosshair_mesh.surface_add_vertex(Vector3(0, 0, crosshair_size))
+	crosshair_mesh.surface_add_vertex(Vector3(0, 0, -crosshair_size/2))
+	crosshair_mesh.surface_add_vertex(Vector3(0, 0, crosshair_size/2))
 	crosshair_mesh.surface_end()
 	
 	crosshair_material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED

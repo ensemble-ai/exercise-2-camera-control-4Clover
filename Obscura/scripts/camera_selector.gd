@@ -29,6 +29,7 @@ func _process(_delta):
 		if cameras[current_controller] != null:
 			cameras[current_controller].make_current()
 			cameras[current_controller].draw_camera_logic = true
+			cameras[current_controller].position = %Vessel.position
 
 	if cameras[current_controller] == null:
 		for index in len(cameras):

@@ -5,9 +5,8 @@ extends CameraControllerBase
 @export var bottom_right := Vector2(40, -40)
 @export var autoscroll_speed := Vector3(18, 0, 0)
 
-# Create camera box, move camera box at scroll speed, if target is against left edge, add velocity to target
 
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ADD AUTO SCALING BOX TO ZOOM LEVEL !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !!!!!!!!!!!!!!!!!!Plan to add auto scaling for window size and zoom!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -21,6 +20,7 @@ func _process(delta: float) -> void:
 	if draw_camera_logic:
 		draw_logic()
 	
+	# Continuous movement based on autoscroll_speed
 	global_position += autoscroll_speed * delta
 	
 	var tpos : Vector3 = target.global_position
@@ -51,7 +51,7 @@ func _process(delta: float) -> void:
 		target.global_position.z = cpos.z + bottom - target.HEIGHT / 2.0
 	
 	super(delta)
-	
+
 func draw_logic() -> void:
 	var left : float = top_left.x
 	var right : float = bottom_right.x
