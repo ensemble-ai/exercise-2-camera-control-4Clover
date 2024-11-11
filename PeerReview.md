@@ -140,7 +140,7 @@ Almost all the rules in the style guide were followed correctly.
 ___
 #### Put style guide infractures ####
 * [Weird spacing in variable declarations](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_position_lock_lerp.gd#L56)
-* [A single line between functions]([https://github.com/dr-jam/ECS189L](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_auto_scroller.gd#L54)
+* [A single line between functions](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_auto_scroller.gd#L54)
 ___
 
 # Best Practices #
