@@ -130,7 +130,7 @@ Please refer to the first code review template on how to do a permalink.
 
 
 #### Style Guide Infractions ####
-I could barely find any style guide infractions, i believe the student has throughly read and memorized the Godot style guide and took care when coding to make it neat and easily accessible.
+I could barely find any style guide infractions, I believe the student has throughly read and memorized the Godot style guide and took care when coding to make it neat and easily accessible.
 * [Weird spacing in variable declarations](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_position_lock_lerp.gd#L56) - When drawing the crosshairs, the variable declarations at the top have uneven spacing
 * [A single line between functions](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_auto_scroller.gd#L54) - According to the Godot style guide, there should be 2 lines in between functions.
 #### Style Guide Exemplars ####
