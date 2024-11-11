@@ -130,12 +130,17 @@ Please refer to the first code review template on how to do a permalink.
 
 
 #### Style Guide Infractions ####
-
+I could barely find any style guide infractions, i believe the student has throughly read and memorized the Godot style guide and took care when coding to make it neat and easily accessible.
+* [Weird spacing in variable declarations](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_position_lock_lerp.gd#L56) - When drawing the crosshairs, the variable declarations at the top have uneven spacing
+* [A single line between functions](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_auto_scroller.gd#L54) - According to the Godot style guide, there should be 2 lines in between functions.
 #### Style Guide Exemplars ####
-
+* [Correct exported variable definition](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_auto_scroller.gd#L4)) - Exported variables are declared at the very top, and there is spacing aroung the := operators.
+* [Correct use of comments](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_lerp_target_focus.gd#L32) - Comments about the code have a space after the #, while code that is commented out do not have the space - this is to distinguish which is a comment for information and which is code that is just disabled.
+Almost all the rules in the style guide were followed correctly.
 ___
 #### Put style guide infractures ####
-
+* [Weird spacing in variable declarations](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_position_lock_lerp.gd#L56)
+* [A single line between functions]([https://github.com/dr-jam/ECS189L](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_auto_scroller.gd#L54)
 ___
 
 # Best Practices #
@@ -150,5 +155,8 @@ If the student has breached the best practices and has done something that shoul
 This should be similar to the Code Style justification.
 
 #### Best Practices Infractions ####
+* Honestly would not find any infractions of the Godot Best Practices guide, student did well in making their code and project as efficient as possible.
 
 #### Best Practices Exemplars ####
+* [snake case](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_four_way_speed.gd#L61) - variables are correctly declared in snake case.
+* [_process is used in vessel.gd](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/vessel.gd#L14) - Correct use of _process over _physics_process.
