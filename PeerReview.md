@@ -21,8 +21,8 @@ If you are in a rare situation where two peer-reviewers are on a single reposito
 
 ## Peer-reviewer Information
 
-* *name:* [your name here] 
-* *email:* [your @ucdavis.edu email address here]
+* *name:* [Michelle Lu] 
+* *email:* [mchlu@ucdavis.edu]
 
 ### Description ###
 
@@ -52,7 +52,7 @@ ___
 
 ### Stage 1 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
@@ -60,12 +60,12 @@ ___
 
 ___
 #### Justification ##### 
-Write Justification here.
+Camera remains locked onto the target and the plus symbol is drawn correctly. All the cameras tested also work in hyperspeed mode.
 
 ___
 ### Stage 2 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
@@ -73,12 +73,12 @@ ___
 
 ___
 #### Justification ##### 
-Write Justification here.
+Camera scrolls to the right at a constant speed, while the target appears to stay still. The target is also unable to leave the confines of the box.
 
 ___
 ### Stage 3 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
@@ -86,12 +86,12 @@ ___
 
 ___
 #### Justification ##### 
-Write Justification here.
+The target is able to move ahead of the cross, giving the impression that the camera is lagging behind. The camera doesn't exceed a certain leash distance and speeds up when catching back up to the target when the target becomes stationary.
 
 ___
 ### Stage 4 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
@@ -99,12 +99,12 @@ ___
 
 ___
 #### Justification ##### 
-Write Justification here.
+The cross is able to move ahead of the target, giving the impression of a "look ahead" camera. When the target stops, the camera returns to the target after waiting a set amount of time, and the camera never exceeds it's leash distance.
 
 ___
 ### Stage 5 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
@@ -112,7 +112,7 @@ ___
 
 ___
 #### Justification ##### 
-Write Justification here.
+There are 2 boxes correctly drawn. When the target is inside the inner box, the camera doesn't move, but if it's in the outer box, the camera moves in the direction the of the quadrant of the box the player is in when the player also moves in that direction. The target is also unable to escape the outer box, fulfilling all the requirements.
 ___
 # Code Style #
 
