@@ -159,4 +159,4 @@ This should be similar to the Code Style justification.
 
 #### Best Practices Exemplars ####
 * [snake case](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/camera_controllers/camera_controller_four_way_speed.gd#L61) - variables are correctly declared in snake case.
-* [_process is used in vessel.gd](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/a9c94769fa00e18d2d4910886f61038ace83602a/Obscura/scripts/vessel.gd#L14) - Correct use of _process over _physics_process.
+* [_process is used in vessel.gd](https://github.com/ensemble-ai/exercise-2-camera-control-4Clover/blob/fa506ca2d547a989efb6dde401eb34525facd690/Obscura/scripts/camera_controllers/camera_controller_four_way_speed.gd#L20) - Correct use of _process over _physics_process.
